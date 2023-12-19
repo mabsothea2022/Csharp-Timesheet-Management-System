@@ -48,7 +48,7 @@ partial class ClockManagementForm
         ClockFormLabel.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
         ClockFormLabel.Location = new Point(325, 55);
         ClockFormLabel.Name = "ClockFormLabel";
-        ClockFormLabel.Size = new Size(200, 46);
+        ClockFormLabel.Size = new Size(391, 89);
         ClockFormLabel.TabIndex = 0;
         ClockFormLabel.Text = "Clock Form";
         // 
@@ -58,7 +58,7 @@ partial class ClockManagementForm
         currentTimeLabel.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
         currentTimeLabel.Location = new Point(252, 137);
         currentTimeLabel.Name = "currentTimeLabel";
-        currentTimeLabel.Size = new Size(99, 46);
+        currentTimeLabel.Size = new Size(193, 89);
         currentTimeLabel.TabIndex = 1;
         currentTimeLabel.Text = "Time";
         currentTimeLabel.TextAlign = ContentAlignment.TopCenter;
@@ -69,7 +69,7 @@ partial class ClockManagementForm
         CardnoLabel.AutoSize = true;
         CardnoLabel.Location = new Point(178, 264);
         CardnoLabel.Name = "CardnoLabel";
-        CardnoLabel.Size = new Size(107, 32);
+        CardnoLabel.Size = new Size(214, 65);
         CardnoLabel.TabIndex = 2;
         CardnoLabel.Text = "Card No:";
         // 
@@ -77,14 +77,14 @@ partial class ClockManagementForm
         // 
         cardnoTextBox.Location = new Point(291, 257);
         cardnoTextBox.Name = "cardnoTextBox";
-        cardnoTextBox.Size = new Size(327, 39);
+        cardnoTextBox.Size = new Size(754, 71);
         cardnoTextBox.TabIndex = 3;
         // 
         // clockinButton
         // 
         clockinButton.Location = new Point(252, 345);
         clockinButton.Name = "clockinButton";
-        clockinButton.Size = new Size(136, 39);
+        clockinButton.Size = new Size(352, 105);
         clockinButton.TabIndex = 4;
         clockinButton.Text = "Time-in";
         clockinButton.UseVisualStyleBackColor = true;
@@ -92,9 +92,9 @@ partial class ClockManagementForm
         // 
         // clockoutButton
         // 
-        clockoutButton.Location = new Point(461, 345);
+        clockoutButton.Location = new Point(693, 345);
         clockoutButton.Name = "clockoutButton";
-        clockoutButton.Size = new Size(136, 39);
+        clockoutButton.Size = new Size(352, 105);
         clockoutButton.TabIndex = 5;
         clockoutButton.Text = "Time-out";
         clockoutButton.UseVisualStyleBackColor = true;
@@ -108,9 +108,9 @@ partial class ClockManagementForm
         // 
         // ClockManagementForm
         // 
-        AutoScaleDimensions = new SizeF(13F, 32F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(823, 480);
+        AutoScaleDimensions = new SizeF(240F, 240F);
+        AutoScaleMode = AutoScaleMode.Dpi;
+        ClientSize = new Size(1372, 731);
         Controls.Add(clockoutButton);
         Controls.Add(clockinButton);
         Controls.Add(cardnoTextBox);

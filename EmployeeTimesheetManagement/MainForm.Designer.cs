@@ -13,13 +13,16 @@ partial class MainForm
     ///  Clean up any resources being used.
     /// </summary>
     /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-    protected override void Dispose(bool disposing) {
-        if (disposing && (components != null)) {
+    protected override void Dispose(bool disposing)
+    {
+        if (disposing && (components != null))
+        {
             components.Dispose();
         }
         base.Dispose(disposing);
     }
-    protected override void OnFormClosing(FormClosingEventArgs e) {
+    protected override void OnFormClosing(FormClosingEventArgs e)
+    {
         MainForm_FormClosing(e);
     }
 
@@ -40,17 +43,18 @@ partial class MainForm
         // 
         EmployeeTimesheetManagerLabel.AutoSize = true;
         EmployeeTimesheetManagerLabel.Font = new Font("Segoe UI", 24F, FontStyle.Regular, GraphicsUnit.Point);
-        EmployeeTimesheetManagerLabel.Location = new Point(288, 70);
+        EmployeeTimesheetManagerLabel.Location = new Point(666, 170);
         EmployeeTimesheetManagerLabel.Name = "EmployeeTimesheetManagerLabel";
-        EmployeeTimesheetManagerLabel.Size = new Size(557, 54);
+        EmployeeTimesheetManagerLabel.Size = new Size(1112, 106);
         EmployeeTimesheetManagerLabel.TabIndex = 1;
         EmployeeTimesheetManagerLabel.Text = "Employee Timesheet Manager";
         // 
         // ManageEmployeeButton
         // 
-        ManageEmployeeButton.Location = new Point(435, 266);
+        ManageEmployeeButton.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        ManageEmployeeButton.Location = new Point(849, 622);
         ManageEmployeeButton.Name = "ManageEmployeeButton";
-        ManageEmployeeButton.Size = new Size(267, 64);
+        ManageEmployeeButton.Size = new Size(662, 103);
         ManageEmployeeButton.TabIndex = 2;
         ManageEmployeeButton.Text = "Manage Employee";
         ManageEmployeeButton.UseVisualStyleBackColor = true;
@@ -58,9 +62,9 @@ partial class MainForm
         // 
         // TimeRecordButton
         // 
-        TimeRecordButton.Location = new Point(435, 174);
+        TimeRecordButton.Location = new Point(849, 441);
         TimeRecordButton.Name = "TimeRecordButton";
-        TimeRecordButton.Size = new Size(267, 61);
+        TimeRecordButton.Size = new Size(662, 100);
         TimeRecordButton.TabIndex = 3;
         TimeRecordButton.Text = "Time Record";
         TimeRecordButton.UseVisualStyleBackColor = true;
@@ -68,9 +72,9 @@ partial class MainForm
         // 
         // MainForm
         // 
-        AutoScaleDimensions = new SizeF(13F, 32F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(1156, 626);
+        AutoScaleDimensions = new SizeF(240F, 240F);
+        AutoScaleMode = AutoScaleMode.Dpi;
+        ClientSize = new Size(2315, 1038);
         Controls.Add(TimeRecordButton);
         Controls.Add(ManageEmployeeButton);
         Controls.Add(EmployeeTimesheetManagerLabel);
@@ -82,7 +86,7 @@ partial class MainForm
         Text = "MainForm";
         ResumeLayout(false);
         PerformLayout();
-}
+    }
 
     #endregion
 

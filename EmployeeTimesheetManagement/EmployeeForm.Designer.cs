@@ -56,7 +56,7 @@ partial class EmployeeForm
         label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point);
         label1.Location = new Point(482, 27);
         label1.Name = "label1";
-        label1.Size = new Size(268, 46);
+        label1.Size = new Size(526, 89);
         label1.TabIndex = 0;
         label1.Text = "Employee Form";
         // 
@@ -65,72 +65,72 @@ partial class EmployeeForm
         label2.AutoSize = true;
         label2.Location = new Point(29, 123);
         label2.Name = "label2";
-        label2.Size = new Size(130, 32);
+        label2.Size = new Size(248, 65);
         label2.TabIndex = 1;
-        label2.Text = "Identity ID:";
+        label2.Text = "Identity ID";
         label2.TextAlign = ContentAlignment.TopRight;
         // 
         // label3
         // 
         label3.AutoSize = true;
-        label3.Location = new Point(31, 198);
+        label3.Location = new Point(31, 227);
         label3.Name = "label3";
-        label3.Size = new Size(128, 32);
+        label3.Size = new Size(241, 65);
         label3.TabIndex = 2;
-        label3.Text = "Full Name:";
+        label3.Text = "Full Name";
         // 
         // label4
         // 
         label4.AutoSize = true;
-        label4.Location = new Point(56, 273);
+        label4.Location = new Point(56, 329);
         label4.Name = "label4";
-        label4.Size = new Size(103, 32);
+        label4.Size = new Size(196, 65);
         label4.TabIndex = 3;
-        label4.Text = "Position:";
+        label4.Text = "Position";
         // 
         // label5
         // 
         label5.AutoSize = true;
-        label5.Location = new Point(53, 348);
+        label5.Location = new Point(53, 444);
         label5.Name = "label5";
-        label5.Size = new Size(107, 32);
+        label5.Size = new Size(204, 65);
         label5.TabIndex = 4;
-        label5.Text = "Card No:";
+        label5.Text = "Card No";
         // 
         // identityTextBox
         // 
-        identityTextBox.Location = new Point(153, 116);
+        identityTextBox.Location = new Point(355, 123);
         identityTextBox.Name = "identityTextBox";
         identityTextBox.ReadOnly = true;
-        identityTextBox.Size = new Size(309, 39);
+        identityTextBox.Size = new Size(568, 71);
         identityTextBox.TabIndex = 5;
         // 
         // fullnameTextBox
         // 
-        fullnameTextBox.Location = new Point(153, 191);
+        fullnameTextBox.Location = new Point(355, 227);
         fullnameTextBox.Name = "fullnameTextBox";
-        fullnameTextBox.Size = new Size(309, 39);
+        fullnameTextBox.Size = new Size(568, 71);
         fullnameTextBox.TabIndex = 6;
         // 
         // positionTextBox
         // 
-        positionTextBox.Location = new Point(153, 266);
+        positionTextBox.Location = new Point(355, 329);
         positionTextBox.Name = "positionTextBox";
-        positionTextBox.Size = new Size(309, 39);
+        positionTextBox.Size = new Size(568, 71);
         positionTextBox.TabIndex = 7;
         // 
         // cardnoTextBox
         // 
-        cardnoTextBox.Location = new Point(153, 341);
+        cardnoTextBox.Location = new Point(355, 444);
         cardnoTextBox.Name = "cardnoTextBox";
-        cardnoTextBox.Size = new Size(309, 39);
+        cardnoTextBox.Size = new Size(568, 71);
         cardnoTextBox.TabIndex = 8;
         // 
         // addnewButton
         // 
-        addnewButton.Location = new Point(45, 496);
+        addnewButton.Location = new Point(58, 685);
         addnewButton.Name = "addnewButton";
-        addnewButton.Size = new Size(134, 39);
+        addnewButton.Size = new Size(134, 87);
         addnewButton.TabIndex = 9;
         addnewButton.Text = "Add New";
         addnewButton.UseVisualStyleBackColor = true;
@@ -138,9 +138,9 @@ partial class EmployeeForm
         // 
         // saveButton
         // 
-        saveButton.Location = new Point(206, 496);
+        saveButton.Location = new Point(221, 685);
         saveButton.Name = "saveButton";
-        saveButton.Size = new Size(134, 39);
+        saveButton.Size = new Size(134, 87);
         saveButton.TabIndex = 10;
         saveButton.Text = "Save";
         saveButton.UseVisualStyleBackColor = true;
@@ -148,9 +148,9 @@ partial class EmployeeForm
         // 
         // updateButton
         // 
-        updateButton.Location = new Point(370, 496);
+        updateButton.Location = new Point(375, 685);
         updateButton.Name = "updateButton";
-        updateButton.Size = new Size(134, 39);
+        updateButton.Size = new Size(196, 87);
         updateButton.TabIndex = 11;
         updateButton.Text = "Update";
         updateButton.UseVisualStyleBackColor = true;
@@ -159,19 +159,19 @@ partial class EmployeeForm
         // dataGridView1
         // 
         dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-        dataGridView1.Location = new Point(482, 91);
+        dataGridView1.Location = new Point(946, 123);
         dataGridView1.Name = "dataGridView1";
         dataGridView1.RowHeadersWidth = 51;
         dataGridView1.RowTemplate.Height = 32;
-        dataGridView1.Size = new Size(733, 381);
+        dataGridView1.Size = new Size(1060, 786);
         dataGridView1.TabIndex = 12;
         dataGridView1.SelectionChanged += dataGridView1_SelectionChanged;
         // 
         // DeleteButton
         // 
-        DeleteButton.Location = new Point(538, 496);
+        DeleteButton.Location = new Point(600, 685);
         DeleteButton.Name = "DeleteButton";
-        DeleteButton.Size = new Size(125, 39);
+        DeleteButton.Size = new Size(251, 87);
         DeleteButton.TabIndex = 13;
         DeleteButton.Text = "Delete";
         DeleteButton.UseVisualStyleBackColor = true;
@@ -179,9 +179,9 @@ partial class EmployeeForm
         // 
         // EmployeeForm
         // 
-        AutoScaleDimensions = new SizeF(13F, 32F);
-        AutoScaleMode = AutoScaleMode.Font;
-        ClientSize = new Size(1258, 598);
+        AutoScaleDimensions = new SizeF(240F, 240F);
+        AutoScaleMode = AutoScaleMode.Dpi;
+        ClientSize = new Size(2018, 950);
         Controls.Add(DeleteButton);
         Controls.Add(dataGridView1);
         Controls.Add(updateButton);
@@ -207,7 +207,7 @@ partial class EmployeeForm
 
     #endregion
 
-    private Label label1;
+    private Label label1;=
     private Label label2;
     private Label label3;
     private Label label4;

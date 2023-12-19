@@ -37,7 +37,7 @@ public partial class EmployeeForm : Form
         fullnameTextBox.Clear();
         positionTextBox.Clear();
         cardnoTextBox.Clear();
-        fullnameTextBox.Focus(); 
+        fullnameTextBox.Focus();
         fullnameTextBox.Enabled = true;
         positionTextBox.Enabled = true;
         cardnoTextBox.Enabled = true;
@@ -46,15 +46,22 @@ public partial class EmployeeForm : Form
 
     private void saveButton_Click(object sender, EventArgs e)
     {
+        string cardNo = cardnoTextBox.Text.Trim();
         try
         {
-            var emp = new Employee(
-                fullnameTextBox.Text.Trim(),
-                positionTextBox.Text.Trim(),
-                cardnoTextBox.Text.Trim()
-                );
-            timeSheet.AddEmployee(emp);
-
+            int foundIndex = timeSheet.GetAllEmployees(true).FindIndex(em => em.CardNo == cardnoTextBox.Text.Trim());
+            if (foundIndex == -1)
+            {
+                var emp = new Employee(
+                    fullnameTextBox.Text.Trim(),
+                    positionTextBox.Text.Trim(),
+                    cardnoTextBox.Text.Trim()
+                    );
+                timeSheet.AddEmployee(emp);
+                saveButton.Enabled = false;
+            }
+            else
+                MessageBox.Show("The CardNo is already used. Please try a different CardNo");
         }
         catch (ArgumentException Ae)
         {
@@ -63,7 +70,6 @@ public partial class EmployeeForm : Form
         finally
         {
             addnewButton.Enabled = true;
-            saveButton.Enabled = false;
             LoadToGrid(true);
         }
     }
@@ -103,6 +109,7 @@ public partial class EmployeeForm : Form
         timeSheet.RemoveEmployee(id);
         LoadToGrid(true);
         DeleteButton.Enabled = false;
+        updateButton.Enabled = false;
     }
     private void dataGridView1_SelectionChanged(object sender, EventArgs e)
     {
@@ -122,7 +129,8 @@ public partial class EmployeeForm : Form
         }
     }
 
-    private void EmployeeForm_Closing(FormClosingEventArgs e) {
+    private void EmployeeForm_Closing(FormClosingEventArgs e)
+    {
         TimeSheetDataStorage.SaveTimeSheetToStorage(timeSheet);
     }
 }

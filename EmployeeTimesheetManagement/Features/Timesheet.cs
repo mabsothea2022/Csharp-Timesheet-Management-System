@@ -11,7 +11,7 @@ public class Timesheet {
     public List<Employee>? Employees { get; set; }
     public Timesheet() { Employees = new List<Employee>();}
     public void AddEmployee(Employee emp) {
-        if (string.IsNullOrEmpty(emp.FullName) || string.IsNullOrEmpty(emp.FullName) || string.IsNullOrEmpty(emp.FullName))
+        if (string.IsNullOrEmpty(emp.FullName) || string.IsNullOrEmpty(emp.FullName) || string.IsNullOrEmpty(emp.FullName) ||  string.IsNullOrEmpty(emp.CardNo))
             throw new ArgumentException("Please provide all employee's data");
         else
             Employees?.Add(emp);
